@@ -1,9 +1,7 @@
 library(KoNLP)
 library(shiny)
-library(RMySQL)
 library(ggmap)
 
-dbEdit <- dbConnect(MySQL(), user="root", host="localhost", dbname="textmaster", password="0427")
 setwd('C:/Python27/user')
 path_add<-'.txt'
 PODIC = scan(file='podic.txt', what = 'char', sep=',', encoding="UTF-8")
@@ -72,21 +70,10 @@ netotal <- f(nesum)
 vj <- netotal-pototal
 
 if(vj > 10){
-  a <- order(nesum,decreasing=TRUE)[1]
-  query <- paste("select * from editorial limit ", a-1, ",1", sep="")
-  top <- dbSendQuery(dbEdit, query)
-  top <- fetch(top)
-  top <- as.character(top)
   vjresult <- "부정적"
 } else if(vj < -10){
-  a <- order(posum,decreasing=TRUE)[1]
-  query <- paste("select * from editorial limit ", a-1, ",1", sep="")
-  top <- dbSendQuery(dbEdit, query)
-  top <- fetch(top)
-  top <- as.character(top)
   vjresult <- "긍정적"
 } else{
-  top <- " "
   vjresult <- "중립적"
 }
 
