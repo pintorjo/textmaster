@@ -1,0 +1,26 @@
+body {
+	background-color: ##EAEAEA
+}
+
+p{
+	font-weight: bold;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	color: #353535;
+}
+
+h4{
+	font-weight: bold;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	color: #353535;
+	text-align: center;
+}
+
+h2{
+	font-weight: bold;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	text-align: center;
+	color: #353535;
+}

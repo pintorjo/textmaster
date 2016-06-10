@@ -1,0 +1,59 @@
+<style>
+html{
+background: url(back.jpg) no-repeat center center fixed;
+background-size: 100% 100%;
+}
+
+div{
+position: relative;
+top: 130px;
+left: 280px;
+}
+</style>
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+TextMaster
+</title>
+<meta charset= utf-8>
+<body>
+<center>
+<div>
+<image src="TMLOGO.png" height="270" width="270">
+</div>
+<div>
+<form method="post" action="result.php">
+<fieldset style="width:600px; border:solid #bdbdbd;">
+<input type ="text" style="width:300px;height:43px;border-style:none;" name="keyword" required placeholder = "키워드를 입력해주세요" required>
+
+<select name="gender" style="height:40px;border-style:none;"><br>
+	<option value="female">여자</option><br>
+	<option value="male">남자</option><br>
+</select>
+
+<select name="age" style="height:40px;border-style:none;"><br>
+	<option value="10">10대</option><br>
+	<option value="20">20대</option><br>
+	<option value="30">30대</option><br>
+	<option value="40">40대</option><br>
+	<option value="50">50대 이상</option><br>
+</select>
+
+<select name="region" style="height:40px;border-style:none;"><br>
+	<option value="seoul">서울시</option><br>
+	<option value="kyungki">경기도</option><br>
+	<option value="chung">충청도</option><br>
+	<option value="jun">전라도</option><br>
+	<option value="kyoung">경상도</option><br>
+	<option value="kang">강원도</option><br>
+	<option value="inchun">기타</option>
+</select>
+<input type="submit" style="height:40px;border-style:none;" value="검색">
+</fieldset>
+</form>
+</center>
+</div>
+
+</body>
+</html>
